@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/static/homepage.css">
+  </head>
+<body>
+  {% include 'navigation.html'%}
+
+    
+      
+      <img src= "/static/HomePage_vote.jpeg" alt="Your Image" class="img"  >
+      
+      <header>
+        <h1>Welcome to LetMeVote</h1>
+        <p>Your Ultimate Voting Platform</p>
+      </header>
+      <div class="container">
+        <h2>Why Choose LetMeVote?</h2>
+        <p>LetMeVote empowers you to voice your opinion on a variety of topics, ranging from politics to pop culture and beyond.</p>
+        <br>
+        <p>Join our community of engaged voters and make your voice heard!</p>
+        <br>
+        <br>
+        <a href="{% url 'polls:index' %}" class="cta-button">Vote Now</a>
+      </div>
+      <footer>
+        <p>&copy; 2024 LetMeVote. All rights reserved.</p>
+      </footer>
+</body>
+</html>
